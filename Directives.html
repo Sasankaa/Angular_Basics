@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js">
+        </script>
+    </head>
+    <body>
+        <div ng-app="" ng-init="countries = [{local:'en-us',name:'United States'},{local:'en-uk', name:'England'}]">
+            <p>list of countries with locale</p>
+            <ol>
+                <li ng-repeat="country in countries">
+                    {{'Country: '+ country.name +' locale: '+ country.local}}
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>
